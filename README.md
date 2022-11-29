@@ -15,8 +15,8 @@ Aplicação web criada com HTML, CSS e Javascript Vanilla.
 
 Acesse clicando no botão abaixo:   
   
-<a href=""> 
-    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/> 
+<a href="https://matheuskeidygomes.github.io/dot/"> 
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/> 
 </a>
 
 # Screenshots
