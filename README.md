@@ -22,7 +22,10 @@ Acesse clicando no botão abaixo:
 
 # Screenshots
 
-![DeezerAPI](https://user-images.githubusercontent.com/74063350/157446144-b2197b00-75ff-4da1-a461-afaa13ef7aa5.png)
+![image](https://user-images.githubusercontent.com/74063350/204648947-4943c34b-82a9-4fed-8be2-e03de73dca47.png)
+![image](https://user-images.githubusercontent.com/74063350/204649043-031dcf18-29a1-4cff-9afb-c051cba08317.png)
+![image](https://user-images.githubusercontent.com/74063350/204649123-47595ed4-c6c6-4a63-99ff-0c563eea26c6.png)
+
 
 # Pré-requisitos
 
