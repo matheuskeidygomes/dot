@@ -1,6 +1,6 @@
 # Dot Digital Group Website
 
-Aplicação web criada com HTML, CSS e Javascript Vanilla.  
+Aplicação web criada com HTML, CSS e Javascript.  
 
 <h2 align="center">
   <a href="#Repositório-Online">Repositório Online</a> • 
