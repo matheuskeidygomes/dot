@@ -1,0 +1,123 @@
+#second-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #03b5b0;
+    padding: 2rem 1rem;
+}
+
+#second-banner h2 {
+    color: #ffcc33;
+    font-size: 3rem;
+}
+
+#second-banner span {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    width: 70%;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.dropdown-image-icon {
+    width: 12rem;
+    height: 12rem;
+}
+
+.dropdown-area {
+    width: 30%;
+}
+
+.dropdown-area-top {
+    background-color: white;
+    padding: 2.5rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+}
+
+.dropdown-area-bottom {
+    background-color: #7a2b58;
+    padding: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.bottom-active {
+    background-color: #ffcc33;
+    color: #7a2b58;
+    font-size: 1rem;
+    padding: 6rem 2rem 3rem 2rem;
+    font-weight: lighter;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    animation-name: smooth;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    z-index:1;
+    height: 0px;
+}
+
+.arrow-up {
+    background-color: #7a2b58;
+    width: 2rem;
+    height: 2rem;
+    padding: .8rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4.5rem;
+}
+
+.arrow-down {
+    background-color: rgb(255, 255, 255);
+    width: 2rem;
+    height: 2rem;
+    padding: .8rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -4.5rem;
+}
+
+.arrow-down:hover,
+.arrow-up:hover {
+    cursor: pointer;
+    transition: all 0.1s linear;
+    transform: scale(110%);
+}
+
+
+@media only screen and (max-width:800px) {
+    .dropdown-container {
+        flex-direction: column;
+    }
+    .dropdown-area {
+        width: 100%;
+        z-index:1;
+    }
+}
+
+
+@keyframes smooth {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0px);
+        height: auto;
+    }
+}
