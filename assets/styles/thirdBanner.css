@@ -4,15 +4,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
     background-color: #353535;
     padding:2rem 1rem;
-}
-
-.third-banner-division-brown {
-    position: absolute;
-    top:-9rem;
-    right:-8rem;
+    overflow: hidden;
 }
 
 #third-banner h2 {
@@ -25,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     gap:5rem;
 }
 
@@ -53,9 +47,39 @@
     right:0;
 } 
 
+.third-banner-text-container {
+    font-size:1.3rem;
+    font-weight: 200;
+}
+
+
+@media only screen and (max-width:1300px) {
+    .third-banner-text-container {
+        font-size:1rem;
+    }
+
+    .third-banner-container {
+        width: 90%;
+    }
+    
+}
+
+
+@media only screen and (max-width:1000px) {
+    .third-banner-text-container {
+        font-size:.8rem;
+    }
+}
+
 @media only screen and (max-width:800px) {
     .third-banner-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .third-banner-text-container {
+        font-size:1.2rem;
+    }
+    .third-banner-images-container {
+        width: 140%;
     }
 }
 

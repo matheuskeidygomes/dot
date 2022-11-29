@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
     background-color: #03b5b0;
     padding: 2rem 1rem;
+    overflow: hidden;
 }
 
 #second-banner h2 {
@@ -16,7 +16,7 @@
 
 #second-banner span {
     font-size: 1.3rem;
-    font-weight: lighter;
+    font-weight: 500;
     width: 70%;
 }
 
@@ -99,16 +99,65 @@
     transform: scale(110%);
 }
 
+.second-banner-division-brown {
+    position: absolute;
+    bottom: -4rem;
+    right: -10rem;
+}
+
+@media only screen and (max-width:1300px) {
+    .dropdown-container {
+        width: 80%;
+        margin:2rem 0rem 10rem 0rem;
+    }
+    .dropdown-image-icon {
+        width: 9rem;
+        height: 9rem;
+    }
+    #second-banner span {
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width:1000px) {
+    .dropdown-container {
+        width: 90%;
+    }
+    #second-banner span {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+}
 
 @media only screen and (max-width:800px) {
     .dropdown-container {
         flex-direction: column;
+        gap:4rem;
     }
     .dropdown-area {
         width: 100%;
         z-index:1;
     }
+    .second-banner-division-brown {
+        width:50%;
+        bottom: -3rem;
+        right: -10rem;
+    }
+    .dropdown-image-icon {
+        width: 13rem;
+        height: 13rem;
+    }
 }
+
+@media only screen and (max-width:600px) {
+    .second-banner-division-brown {
+        width:50%;
+        bottom: -2rem;
+        right: -7rem;
+    }
+}
+
 
 
 @keyframes smooth {

@@ -4,17 +4,16 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
     background-color: #ffffff;
-    padding:4rem 1rem;
+    padding: 4rem 1rem;
 }
 
 
 #fourth-banner span {
-    width:70%;
-    font-size:1.3rem;
-    font-weight: lighter;
-    color:#363636;
+    width: 70%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #363636;
 }
 
 .fourth-banner-circle-container {
@@ -22,18 +21,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:5rem 0rem 3rem 0rem;
+    margin: 5rem 0rem 3rem 0rem;
 }
 
-.plus-image-one,.plus-image-two, .minus-image {
-    position:absolute;
-    padding:1rem;
+.plus-image-one,
+.plus-image-two,
+.minus-image {
+    position: absolute;
+    padding: 1rem;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
 }
 
-.plus-image-one:hover,.plus-image-two:hover, .minus-image:hover {
+.plus-image-one:hover,
+.plus-image-two:hover,
+.minus-image:hover {
     transition: all 0.1s linear;
     transform: scale(110%);
     cursor: pointer;
@@ -42,19 +45,19 @@
 
 .plus-image-one {
     background-color: #03b5b0;
-    bottom:15%;
-    left: 8%;    
+    bottom: 15%;
+    left: 8%;
 }
 
 .plus-image-two {
     background-color: #03b5b0;
-    bottom:15%;
-    right:8%;
+    bottom: 15%;
+    right: 8%;
 }
 
 .minus-image {
     background-color: 7a2b58;
-    top:16%;
+    top: 16%;
 }
 
 .inside-circle-container {
@@ -68,63 +71,135 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: all 0.4s linear;
 }
 
 .interactive-circle-image {
     width: 100%;
 }
 
+@media only screen and (max-width:1000px) {
+    #fourth-banner span {
+        font-size:1rem;
+    }
+}
+
 @media only screen and (max-width:800px) {
     .fourth-banner-circle-container {
-        width:80%;
+        width: 80%;
     }
-
-    .inside-circle-container {
-
+    #fourth-banner span {
+        font-size:1.2rem;
+        width:90%;
     }
-
 }
 
 @media only screen and (max-width:650px) {
-    .plus-image-one,.plus-image-two, .minus-image {
+
+    .plus-image-one,
+    .plus-image-two,
+    .minus-image {
         width: .8rem;
         height: .8rem;
     }
 
     .plus-image-one {
-        bottom:15%;
-        left: 7%;    
+        bottom: 15%;
+        left: 7%;
     }
-    
+
     .plus-image-two {
-        bottom:15%;
-        right:7%;
+        bottom: 15%;
+        right: 7%;
     }
-    
+
     .minus-image {
-       top:16%;
+        top: 16%;
+    }
+
+    #fourth-banner span {
+        font-size: .9rem;
     }
 }
 
 @media only screen and (max-width:550px) {
-    .plus-image-one,.plus-image-two, .minus-image {
+
+    .plus-image-one,
+    .plus-image-two,
+    .minus-image {
         width: .5rem;
         height: .5rem;
     }
 
     .plus-image-one {
-        bottom:13%;
-        left: 7%;    
+        bottom: 13%;
+        left: 7%;
     }
-    
+
     .plus-image-two {
-        bottom:13%;
-        right:7%;
+        bottom: 13%;
+        right: 7%;
     }
-    
+
     .minus-image {
-       top:16%;
+        top: 16%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .plus-image-one,
+    .plus-image-two,
+    .minus-image {
+        padding:.7rem;
+    }
+
+    .plus-image-one {
+        bottom: 16%;
+        left: 8.5%;
+    }
+
+    .plus-image-two {
+        bottom: 16%;
+        right: 8.5%;
+    }
+
+    .minus-image {
+        top: 15%;
     }
 }
 
 
+@media only screen and (max-width:450px) {
+
+    .plus-image-one {
+        bottom: 15%;
+        left: 8%;
+    }
+
+    .plus-image-two {
+        bottom: 15%;
+        right:8%;
+    }
+
+    .minus-image {
+        top: 14%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .plus-image-one {
+        bottom: 14%;
+        left: 7%;
+    }
+
+    .plus-image-two {
+        bottom: 14%;
+        right:7%;
+    }
+
+    .minus-image {
+        top: 15%;
+    }
+}

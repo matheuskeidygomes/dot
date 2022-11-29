@@ -1,23 +1,22 @@
 #first-banner {
     background-color: #7a2b58;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:3rem 1rem;
+    padding: 3rem 1rem;
     position: relative;
 }
 
 #first-banner h2 {
-    color:#ffcc33;
-    font-size:3rem;
+    color: #ffcc33;
+    font-size: 3rem;
 }
 
 .section-division-image {
-    position:absolute;
-    bottom:-3rem;
-    left:-10rem;
+    position: absolute;
+    bottom: -3rem;
+    left: -10rem;
 }
 
 .first-banner-container {
@@ -25,31 +24,29 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 1.5rem;
-    border:0.2rem solid white;
+    border: 0.2rem solid white;
     width: 50%;
-    padding:1rem 3rem;
+    padding: 1rem 3rem;
     position: relative;
 }
 
-.first-banner-container img {
-
-}
+.first-banner-container img {}
 
 .first-banner-container div {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding:3rem;
-    font-size:1.2rem;
+    padding: 3rem;
+    font-size: 1.2rem;
     font-weight: lighter;
 }
 
 
 @media only screen and (max-width:1300px) {
     .first-banner-container {
-        width:70%;
-        z-index:1;
+        width: 60%;
+        z-index: 1;
         background-color: #7a2b58;
     }
 
@@ -57,28 +54,59 @@
         padding: 3rem 0rem 3rem 3rem;
     }
 
+
+    .section-division-image {
+        bottom: -3rem;
+        left: -13rem;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+
+    .section-division-image {
+        left: -10rem;
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .section-division-image {
+        left: -9rem;
+        bottom:-2rem;
+    }
 }
 
 
 @media only screen and (max-width:800px) {
+    #first-banner {
+        padding: 3rem 1rem 10rem 1rem;
+    }
     .first-banner-container {
         flex-direction: column;
         padding: 0rem 0rem;
-        width:90%;
-        margin-top:30%;
+        width: 90%;
+        margin-top: 30%;
     }
 
     .first-banner-container div {
         padding: 10rem 1.5rem 3rem 1.5rem;
     }
-
     .first-banner-container img {
-        position:absolute;
-        top:-9rem;
-        width:20rem;
+        position: absolute;
+        top: -6rem;
+        width: 15rem;
+    }
+    .section-division-image {
+        bottom: -2rem;
+        left: -20vw;
+        width: 40%;
     }
 }
 
+@media only screen and (max-width:600px) {
 
-
-
+    .section-division-image {
+        bottom: -2rem;
+    }
+}
